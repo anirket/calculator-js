@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: violet;
+}
+.calculator{
+flex: 0 0 90%;
+}
+.screen{
+    width: 100%;
+    font-size: 8rem;
+    background-color: rgb(7, 7, 17);
+    color: white;
+    overflow: hidden;
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.btn,.btn-equal,.btn-cancel{
+    flex: 0 0 25%;
+    font-size: 2.9rem;
+    border: 1px solid black;
+    /* transition:  all 0.8s ease ;  */
+}
+.btn:hover,.btn-equal:hover,.btn-cancel:hover{
+    background-color: blue;
+
+  
+
+}
+.btn-yellow{
+    background-color: orange;
+    color: white;
+}
+.btn-grey{
+    background-color: lightgray;
+    color: black;
+}
+.btn-equal{
+    background-color: green;
+}
+
+.btn-cancel{
+background-color: red;
+
+}
+/* for pc */
+@media only screen and (min-width:600px){
+
+    .calculator{
+        flex: 0 0 50%;
+        }
+
+
+}
